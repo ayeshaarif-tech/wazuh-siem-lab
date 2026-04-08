@@ -1,1 +1,22 @@
-
+{
+  "timestamp": "2025-01-15T03:22:11.000Z",
+  "rule": {
+    "id": "100001",
+    "level": 10,
+    "description": "SSH Brute Force Attack Detected",
+    "mitre": {
+      "technique": "T1110",
+      "tactic": "Credential Access"
+    }
+  },
+  "agent": {
+    "name": "ubuntu-agent",
+    "ip": "192.168.1.105"
+  },
+  "data": {
+    "srcip": "192.168.1.200",
+    "dstip": "192.168.1.105",
+    "failed_attempts": 6,
+    "timeframe_seconds": 45
+  }
+}
