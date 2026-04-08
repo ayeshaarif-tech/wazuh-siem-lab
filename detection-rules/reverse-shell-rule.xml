@@ -1,1 +1,11 @@
+```xml
 
+  5402
+  Possible Privilege Escalation — 
+  Repeated sudo failures detected
+  
+    T1068
+  
+  privilege_escalation,sudo
+
+```
