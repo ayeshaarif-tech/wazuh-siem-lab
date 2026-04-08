@@ -1,1 +1,13 @@
+```xml
 
+  syscheck
+  bash|sh|cmd
+  ppid=(?!bash|sh|terminal|sshd)\S+
+  Possible Reverse Shell — Shell spawned 
+  by non-shell parent process
+  
+    T1059
+  
+  reverse_shell,execution
+
+```
