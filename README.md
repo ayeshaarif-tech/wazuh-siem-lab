@@ -14,7 +14,7 @@ ATT&CK mapping.
 |-----------|---------|
 | Wazuh Manager | Ubuntu 22.04 (VM) |
 | Monitored Agent | Windows 10 / Kali Linux (VM) |
-| Hypervisor | VirtualBox |
+| Hypervisor | VMWare |
 | Network | Host-only / NAT network between VMs |
 | Wazuh Version | 4.x |
 
